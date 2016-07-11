@@ -246,6 +246,7 @@ input:focus, textarea:focus{
 	margin: 50px 0px;
 }
 
+/*Adaptando proyecto para Ipads*/
 @media screen and (max-width: 800px) {
 	/*.contenedor {
 		width: auto;
@@ -299,6 +300,74 @@ input:focus, textarea:focus{
 	}
 	/*Guitarras*/
 }
+
+/*Adaptando el proyecto para dispositivos moviles*/
+@media screen and (max-width: 650px){
+	/*Portada*/
+	.header {
+		text-align: center;
+	}
+
+	.logotipo{
+		margin: 0;
+	}
+
+	.menu {
+		position: static;
+		display: block;
+	}
+
+	.menu li:first-child {
+		margin: 0;
+
+	}
+
+	.menu ul {
+		padding: 0;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
