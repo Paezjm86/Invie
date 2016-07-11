@@ -292,6 +292,10 @@ input:focus, textarea:focus{
 	.guitarra.b {
 		height: auto;
 	}
+	
+	.contenedor-guitarra-a {
+		padding: 0; 
+	}
 
 	.contenedor-guitarra-b {
 		position: static;
@@ -325,7 +329,7 @@ input:focus, textarea:focus{
 	.menu ul {
 		padding: 0;
 	}
-
+	/*portada*/
 }
 
 @media screen and (max-width: 500px) {
@@ -351,13 +355,23 @@ input:focus, textarea:focus{
 
 	.titulo {
 		font-size: 30px;
-
 	}
 
 	.title {
 		font-size: 16px;
 	}
-	
+	/*Menu*/
+
+	/*guitarras*/
+	.guitarra img {
+		width: 200px;
+	}
+
+	.title-b {
+		font-size: 30px;
+	}
+
+	/*guitarras*/
 }
 
 
