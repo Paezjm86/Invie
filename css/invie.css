@@ -514,6 +514,13 @@ input:focus, textarea:focus{
 	height: 100%;
 }
 
+/*Media Query para pantallas retinas/iphone*/
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+	.background {
+	background-image: url('../images/background2x.png');
+}
+}
+
 
 
 
