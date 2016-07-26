@@ -308,6 +308,18 @@ input:focus, textarea:focus{
 		width: auto;
 		max-width: 800px;
 	}*/
+
+	/*Precios tabla*/
+	.tabla {
+		margin: 50px 20px;
+	}
+
+	.tabla .contenedor {
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+	/*Precios tabla*/
+
 	/*portada*/
 	.titulo {
 		font-size: 45px;

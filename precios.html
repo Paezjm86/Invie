@@ -5,13 +5,15 @@
 		<meta charset="utf-8"/>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/invie.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	</head>
 	<body>
 		<header id="header" class="header background"> <!-- header -->		<div class="contenedor">		
 				<figure class="logotipo"><!-- logotipo -->
 					<img src="images/invie.png" width="186" height="60" alt="Invie logotipo">
 				</figure>
-				<nav class="menu"><!-- menu -->
+				<span class="burguer-button icon-menu" id="burguer-button"></span>
+				<nav class="menu" id="menu"><!-- menu -->
 					<ul>
 						<li>
 							<a href="index.html">Home</a>
@@ -35,6 +37,9 @@
 						<th>Modelo</th>
 						<th>Precio</th>
 						<th>Descripción</th>
+						<th>Modelo</th>
+						<th>Precio</th>
+						<th>Descripción</th>
 					</tr>
 				</thead>
 				<tbody> <!-- Contenidos -->
@@ -42,13 +47,22 @@
 						<td>Invie Classic</td>
 						<td>$100000</td>
 						<td>Una guitarra muy pro</td>
-					</tr>
-					<tr>
 						<td>Invie Classic</td>
 						<td>$100000</td>
 						<td>Una guitarra muy pro</td>
 					</tr>
 					<tr>
+						<td>Invie Classic</td>
+						<td>$100000</td>
+						<td>Una guitarra muy pro</td>
+						<td>Invie Classic</td>
+						<td>$100000</td>
+						<td>Una guitarra muy pro</td>
+					</tr>
+					<tr>
+						<td>Invie Classic</td>
+						<td>$100000</td>
+						<td>Una guitarra muy pro</td>
 						<td>Invie Classic</td>
 						<td>$100000</td>
 						<td>Una guitarra muy pro</td>
@@ -97,5 +111,44 @@
 				</form>
 			</div>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js">
+			//Script para cargar la libreria de lazy loading
+		</script>
+		<script>
+			var consulta = window.matchMedia('(max-width: 500px)');
+			consulta.addListener(mediaQuery);
+
+			var $burguerButton = document.getElementById('burguer-button');
+			var $menu = document.getElementById('menu');
+			function toggleMenu(){
+				$menu.classList.toggle('active')
+			};
+				
+			function mediaQuery(){
+					if (consulta.matches) {
+					//si se cumple hagamos esto
+					console.log('se cumplio la condicion');
+					$burguerButton.addEventListener('touchstart', toggleMenu);
+				} else {
+					//si no se cumple hagamos esto
+					console.log('no se cumplio la condicion');
+					$burguerButton.removeEventListener('touchstart', toggleMenu);
+				}	
+			}
+
+			mediaQuery()
+
+			// lazy loading - Se carga la fuente del script con anterioridad
+			var blazy = new Blazy({
+				//options
+				selector: 'img'
+			});
+			
+			// $burguerButton.addEventListener('touchstart', toggleMenu);
+
+			// function toggleMenu(){
+			// 	$menu.classList.toggle('active')
+			// };
+		</script>
 	</body>
 </html>	
