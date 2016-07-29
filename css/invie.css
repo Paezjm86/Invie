@@ -463,6 +463,18 @@ input:focus, textarea:focus{
 
 @media screen and (max-width: 500px) {
 	/*portada*/
+	.portada .button {
+		display: block;
+	}
+
+	.col2 {
+		align-items: stretch;
+	}
+	
+	.precios .header .logotipo {
+		margin: 50px 0;
+	}
+
 	.burguer-button {
 		display: block;
 	}
