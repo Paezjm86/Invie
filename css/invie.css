@@ -467,10 +467,6 @@ input:focus, textarea:focus{
 		display: block;
 	}
 
-	.col2 {
-		align-items: stretch;
-	}
-	
 	.precios .header .logotipo {
 		margin: 50px 0;
 	}
@@ -478,6 +474,7 @@ input:focus, textarea:focus{
 	.burguer-button {
 		display: block;
 	}
+
 	.portada .contenedor {
 		position: static;
 	}	
@@ -546,6 +543,12 @@ input:focus, textarea:focus{
 	}
 
 	/*guitarras*/
+
+	/*Footer*/
+	.col2 {
+		align-items: stretch;
+	}
+	/*Footer*/
 }
 
 .video-responsive-contenedor {
